@@ -61,6 +61,14 @@ a {
   color: initial;
 }
 
+.titleShrikand {
+  font-family: "Shrikhand", cursive;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /* 
     font-family: 'Roboto', sans-serif;
 
@@ -82,6 +90,45 @@ header img {
   position: fixed;
   top: 31px;
   left: 25px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 190px;
+  padding: 20px;
+  background: #164d3f;
+  color: white;
+}
+footer h2 {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+footer p {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.footer_top_cont {
+  margin: 18px 0 0 0;
+  display: flex;
+}
+.footer_top_cont_logo {
+  width: 11px;
+}
+.footer_top_cont p {
+  margin: -7px 0 0 15px;
+}
+
+.footer_bot p {
+  margin-top: 11px;
+}
+
+main img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
