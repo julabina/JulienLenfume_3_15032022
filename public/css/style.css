@@ -70,11 +70,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* 
-    font-family: 'Roboto', sans-serif;
-
-    font-family: 'Shrikhand', cursive;
-*/
+/* HEADER */
 .headerCont {
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.534);
@@ -95,6 +91,7 @@ body {
   left: 25px;
 }
 
+/* FOOTER */
 footer {
   position: absolute;
   left: 0;
