@@ -7,7 +7,60 @@
     border: none;
     border-radius: 50px;
     background: map-get($map: $colors, $key: secondary);
+    background: linear-gradient(174deg, map-get($colors, secondary) 11%, map-get($colors, primary) 80%);
     color: white;
     font-size: 0.9em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.349);
+}
+
+@mixin cards {
+    &_card {
+        height: 245px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        box-shadow: 0 7px 15px rgba(0, 0, 0, 0.233);
+        &_img {
+            min-height: 170px;
+            background-size: 100%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+        }
+        &_info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            height: 75px;
+            padding: 10px 28px 10px 10px;
+            &_txt {
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    font-size: 1.1;
+                    font-weight: 700;
+                    margin-bottom: 7px;
+                }
+                p {
+                    font-weight: 300;
+                }
+            }
+        }
+        &_new {
+            z-index: 1;
+            visibility: hidden;
+            position:absolute;
+            right: 32px;
+            padding: 8px 12px;
+            margin-top: 15px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            font-weight: 700;
+            color: darken($color: map-get($colors, tertiary), $amount: 40);
+            background: map-get($map: $colors, $key: tertiary);
+            &--new {
+                visibility: visible;
+            }
+        }
+    }   
 }
