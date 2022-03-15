@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,14 +74,16 @@ body {
 
     font-family: 'Shrikhand', cursive;
 */
-header {
+.headerCont {
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.534);
+  height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 62px;
-  border-bottom: 1px solid #000;
+  width: 100%;
 }
-header img {
+.headerCont img {
   height: 28px;
   margin-top: 7px;
 }
@@ -99,7 +101,7 @@ footer {
   width: 100%;
   height: 190px;
   padding: 20px;
-  background: #164d3f;
+  background: #353535;
   color: white;
 }
 footer h2 {
@@ -128,6 +130,60 @@ footer p {
 
 main img {
   width: 100%;
+}
+
+.nav_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 60px;
+  background: #f6f6f6;
+}
+.nav_form_search {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+}
+.nav_form_search input {
+  height: 100%;
+  padding-left: 10px;
+  width: 68%;
+  font-size: 1em;
+  font-weight: 700;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.nav_form h1 {
+  width: 60%;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 37px;
+}
+.nav_form p {
+  font-weight: 300;
+  width: 80%;
+  line-height: 1.2;
+  margin: 15px 0 30px 0;
+}
+.nav_form_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 0 20px 2px 20px;
+  border: none;
+  border-radius: 50px;
+  background: #FF79DA;
+  color: white;
+  font-size: 0.9em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.349);
 }
 
 /*# sourceMappingURL=style.css.map */

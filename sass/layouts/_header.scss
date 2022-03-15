@@ -1,9 +1,11 @@
-header {
+.headerCont {
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.534);    
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 62px;
-    border-bottom: 1px solid #000;
+    width: 100%;
     img {
         height: 28px;
         margin-top: 7px;

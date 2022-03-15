@@ -15,15 +15,20 @@
 </head>
 <body>
     <header>
-        <img src="./assets/logo/ohmyfood.png" alt="logo d'ohmyfood">
+        <div class="headerCont">
+            <img src="./assets/logo/ohmyfood.png" alt="logo d'ohmyfood">
+        </div>
     </header>
     <main>
         <section class="nav">
-            <form action="submit">
-                <input type="text" placeholder="Paris, Belleville">
+            <form class="nav_form" action="submit">
+                <div class="nav_form_search">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Paris, Belleville">
+                </div>
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionés par nos soins.</p>
-                <button type="submit">Explorer nos restaurants</button>
+                <button class="nav_form_btn" type="submit">Explorer nos restaurants</button>
             </form>
             <div class="nav_functioning">
                 <h2>Fonctionnement</h2>
