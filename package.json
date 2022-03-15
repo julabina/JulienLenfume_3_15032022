@@ -1,0 +1,19 @@
+{
+  "name": "p2_oc",
+  "version": "1.0.0",
+  "description": "Projet 2 de la formation developpeur web d' openclassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julabina/JulienLenfume_3_15032022.git"
+  },
+  "author": "Lenfumé Julien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julabina/JulienLenfume_3_15032022/issues"
+  },
+  "homepage": "https://github.com/julabina/JulienLenfume_3_15032022#readme"
+}
