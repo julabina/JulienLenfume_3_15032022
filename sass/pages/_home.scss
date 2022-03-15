@@ -46,4 +46,43 @@ main img {
             @include btn;
         }
     }
+    &_functioning{
+        padding: 47px 20px 43px 20px;
+        h2 {
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+        &_container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 25px;
+            &_numberCont {
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 0.8em;
+                background: map-get($map: $colors, $key: primary );
+                border-radius: 50%;
+                height: 25px;width: 25px;
+            }
+            &_card {
+                display: flex;
+                align-items: center;
+                height: 70px;
+                width: 100%;
+                margin-left: -10px;
+                padding-left: 40px ;
+                background: map-get($map: $colors, $key:background-lite ) ;
+                border-radius: 20px;
+                box-shadow: 0 7px 15px rgba(0, 0, 0, 0.233);
+                h3 {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
 }
