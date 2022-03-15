@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 62px;
+    border-bottom: 1px solid #000;
+    img {
+        height: 28px;
+        margin-top: 7px;
+    }
+}
+
+.back-arrow {
+    position: fixed;
+    top: 31px;
+    left: 25px;
+} 
