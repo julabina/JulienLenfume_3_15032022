@@ -79,6 +79,21 @@
             &_forChecked {
                 display: none;
             }
+            &--1 {
+                animation: card1 1300ms linear;
+            }
+            &--2 {
+                animation: card2 1300ms linear;
+                
+            }
+            &--3 {
+                animation: card3 1300ms linear;
+                
+            }
+            &--4 {
+                animation: card4 1300ms linear;
+
+            }
         } 
     }
     &_btnCont {
@@ -89,5 +104,67 @@
             @include btn;
             min-width: 180px;
         }
+    }
+}
+
+@keyframes card1 {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes card2 {
+    0% {
+        
+        opacity: 0;
+    }
+    25% {
+        transform: translateY(20%);
+        
+        opacity: 0;
+    }
+    50% {
+        
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes card3 {
+    0% {
+        
+        opacity: 0;
+    }
+    50% {
+        
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    75% {
+        
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes card4 {
+    0% {
+        
+        opacity: 0;
+    }
+    75% {
+        transform: translateY(20%);
+        
+        opacity: 0;
+    }
+    100% {
+        
+        transform: translate(0);
+        opacity: 1;
     }
 }
