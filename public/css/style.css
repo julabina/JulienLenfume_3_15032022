@@ -81,7 +81,7 @@ body {
   right: 0;
   background: white;
   visibility: hidden;
-  animation: visible 5000ms linear;
+  /*  animation: visible 5000ms linear ; */
 }
 .loader_test {
   display: flex;
@@ -439,26 +439,25 @@ footer p {
   position: absolute;
   right: 50px;
   margin-top: -43px;
-  z-index: 1;
+  z-index: 10;
 }
 .menuCont_restaurants_top_card_info_icon_fill {
-  z-index: 10;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 41px;
-  width: 0px;
   background: linear-gradient(to top, #FF79DA 30%, #9356DC 80%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
   cursor: pointer;
-  transition: width 400ms ease-in-out;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
 }
 .menuCont_restaurants_top_card_info_icon_fill:hover {
-  width: 41px;
-  transition: all 600ms ease-in-out;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
 }
 .menuCont_restaurants_top_card_new {
   z-index: 1;
@@ -524,26 +523,25 @@ footer p {
   position: absolute;
   right: 50px;
   margin-top: -43px;
-  z-index: 1;
+  z-index: 10;
 }
 .menuCont_restaurants_bot_card_info_icon_fill {
-  z-index: 10;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 41px;
-  width: 0px;
   background: linear-gradient(to top, #FF79DA 30%, #9356DC 80%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
   cursor: pointer;
-  transition: width 400ms ease-in-out;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
 }
 .menuCont_restaurants_bot_card_info_icon_fill:hover {
-  width: 41px;
-  transition: all 600ms ease-in-out;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
 }
 .menuCont_restaurants_bot_card_new {
   z-index: 1;
