@@ -441,7 +441,7 @@ footer p {
   margin-top: -43px;
   z-index: 10;
 }
-.menuCont_restaurants_top_card_info_icon_fill {
+.menuCont_restaurants_top_card_info_fill {
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -451,10 +451,10 @@ footer p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
-.menuCont_restaurants_top_card_info_icon_fill:hover {
+.menuCont_restaurants_top_card_info_fill:hover {
   z-index: 100;
   opacity: 1;
   transition: opacity 300ms ease-in-out;
@@ -525,7 +525,7 @@ footer p {
   margin-top: -43px;
   z-index: 10;
 }
-.menuCont_restaurants_bot_card_info_icon_fill {
+.menuCont_restaurants_bot_card_info_fill {
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -535,10 +535,10 @@ footer p {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 500ms ease-in-out;
 }
-.menuCont_restaurants_bot_card_info_icon_fill:hover {
+.menuCont_restaurants_bot_card_info_fill:hover {
   z-index: 100;
   opacity: 1;
   transition: opacity 300ms ease-in-out;

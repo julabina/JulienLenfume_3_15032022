@@ -61,23 +61,23 @@
                 right: 50px;
                 margin-top: -43px;
                 z-index: 10;
-                &_fill {
-                    z-index: 1;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: absolute;
-                    background: linear-gradient(to top, map-get($colors, secondary) 30%, map-get($colors, primary) 80%); 
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    cursor: pointer;
-                    opacity: 0;
-                    transition: opacity 500ms ease-in-out;
-                    &:hover {
-                        z-index: 100;
-                        opacity: 1;
-                        transition: opacity 300ms ease-in-out;
-                    }
+            }
+            &_fill {
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                background: linear-gradient(to top, map-get($colors, secondary) 30%, map-get($colors, primary) 80%); 
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                cursor: pointer;
+                opacity: 1;
+                transition: opacity 500ms ease-in-out;
+                &:hover {
+                    z-index: 100;
+                    opacity: 1;
+                    transition: opacity 300ms ease-in-out;
                 }
             }
         }
