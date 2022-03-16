@@ -433,25 +433,34 @@ footer p {
   font-weight: 300;
 }
 .menuCont_restaurants_top_card_info_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  right: 50px;
-  margin-top: -43px;
-  z-index: 10;
-}
-.menuCont_restaurants_top_card_info_fill {
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  right: 50px;
+  margin-top: -43px;
+}
+.menuCont_restaurants_top_card_info_fill {
   position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 49px;
+  height: 23px;
+  width: 26px;
+  margin-top: -54px;
   background: linear-gradient(to top, #FF79DA 30%, #9356DC 80%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   cursor: pointer;
-  opacity: 1;
+  font-size: 1.51em;
+  line-height: 0.04167em;
+  vertical-align: -0.125em;
+  opacity: 0;
   transition: opacity 500ms ease-in-out;
 }
 .menuCont_restaurants_top_card_info_fill:hover {
@@ -517,25 +526,34 @@ footer p {
   font-weight: 300;
 }
 .menuCont_restaurants_bot_card_info_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  right: 50px;
-  margin-top: -43px;
-  z-index: 10;
-}
-.menuCont_restaurants_bot_card_info_fill {
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  right: 50px;
+  margin-top: -43px;
+}
+.menuCont_restaurants_bot_card_info_fill {
   position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 49px;
+  height: 23px;
+  width: 26px;
+  margin-top: -54px;
   background: linear-gradient(to top, #FF79DA 30%, #9356DC 80%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   cursor: pointer;
-  opacity: 1;
+  font-size: 1.51em;
+  line-height: 0.04167em;
+  vertical-align: -0.125em;
+  opacity: 0;
   transition: opacity 500ms ease-in-out;
 }
 .menuCont_restaurants_bot_card_info_fill:hover {
