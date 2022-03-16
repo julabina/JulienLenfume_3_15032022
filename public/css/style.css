@@ -81,7 +81,7 @@ body {
   right: 0;
   background: white;
   visibility: hidden;
-  /*  animation: visible 5000ms linear ; */
+  animation: visible 5000ms linear;
 }
 .loader_test {
   display: flex;
@@ -447,9 +447,9 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 49px;
+  right: 49.5px;
   height: 23px;
-  width: 26px;
+  width: 24.16px;
   margin-top: -54px;
   background: linear-gradient(to top, #FF79DA 30%, #9356DC 80%);
   background-clip: text;
@@ -540,9 +540,9 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 49px;
+  right: 49.5px;
   height: 23px;
-  width: 26px;
+  width: 24.16px;
   margin-top: -54px;
   background: linear-gradient(to top, #FF79DA 30%, #9356DC 80%);
   background-clip: text;
