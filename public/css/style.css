@@ -86,7 +86,7 @@ body {
 }
 
 .back-arrow {
-  position: fixed;
+  position: absolute;
   top: 31px;
   left: 25px;
 }
@@ -348,6 +348,107 @@ footer p {
 .menuCont_restaurants_bot_card_img--2 {
   background-position: bottom;
   background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.picture {
+  min-height: 265px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.picture_palette {
+  background-image: url("../../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.picture_deliceSens {
+  background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+.picture_francaise {
+  background-image: url("../../assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.picture_noteEnchantee {
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url("../../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.mainContainer {
+  padding: 15px;
+  padding-right: 30px;
+  border-radius: 50px 50px 0 0;
+  margin-top: -50px;
+  background: #f6f6f6;
+}
+.mainContainer_title {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-top: 10px;
+}
+.mainContainer_title h1 {
+  font-size: 1.7em;
+}
+.mainContainer_title_heart {
+  font-size: 1.6em;
+  line-height: 1;
+}
+.mainContainer_catCont h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 21px;
+}
+.mainContainer_catCont_separator {
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+  margin: 6px 0 13px 0;
+}
+.mainContainer_catCont_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 67px;
+  background: white;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 15px 12px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.103);
+}
+.mainContainer_catCont_card h3 {
+  font-size: 1.05em;
+  font-weight: 700;
+}
+.mainContainer_catCont_card_info {
+  display: flex;
+  justify-content: space-between;
+}
+.mainContainer_catCont_card_info p {
+  font-size: 0.87em;
+}
+.mainContainer_catCont_card_info_price {
+  margin-right: 10px;
+  font-weight: 700;
+}
+.mainContainer_catCont_card_forChecked {
+  display: none;
+}
+.mainContainer_btnCont {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0;
+}
+.mainContainer_btnCont_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 0 20px 2px 20px;
+  border: none;
+  border-radius: 50px;
+  background: #FF79DA;
+  background: linear-gradient(174deg, #FF79DA 11%, #9356DC 80%);
+  color: white;
+  font-size: 0.9em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.349);
+  min-width: 180px;
 }
 
 /*# sourceMappingURL=style.css.map */

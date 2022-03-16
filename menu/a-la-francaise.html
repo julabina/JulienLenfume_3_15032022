@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title>ohmyfood - À la française</title>
     <meta name="title" content="ohmyfood - À la française">
     <meta name="description" content="La carte de 'À la française', un des restaurants les plus rafinés de Paris">
@@ -12,65 +12,144 @@
 </head>
 <body>
     <header>
-       <a href="../../index.html"><i class="fa-solid fa-arrow-left fa-lg back-arrow"></i></a>
-        <img src="../../assets/logo/ohmyfood.png" alt="logo d'ohmyfood">
+        <div class="headerCont">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left fa-lg back-arrow"></i></a>
+            <img src="../assets/logo/ohmyfood.png" alt="logo d'ohmyfood">
+        </div>
     </header>
     <main>
-        <div class="picture"></div>
+        <div class="picture picture_francaise"></div>
         <div class="mainContainer">
             <div class="mainContainer_title">
-                <h1></h1>
-                <i class="fa-regular fa-heart"></i>
+                <h1 class="titleShrikand">À la française</h1>
+                <i class="fa-regular fa-heart mainContainer_title_heart"></i>
             </div>
-            <div class="mainContainer_entry">
+            <div class="mainContainer_catCont">
+                <!-- entrée -->
                 <h2>Entrées</h2>
-                <div class="mainContainer_entry_separator"></div>
-                <div class="mainContainer_entry_card">
-                    <h3></h3>
-                    <div class="mainContainer_entry_card_info">
-                        <p></p>
-                        <p class=""></p>
+                <div class="mainContainer_catCont_separator"></div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Tartare de poulpe acidulé</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Aux zestes d'orange</p>
+                        <p class="mainContainer_catCont_card_info_price">25€</p>
                     </div>
-                    <div class="mainContainer_entry_card_forChecked">
-                        <div class="mainContainer_entry_card_forChecked_checkIcon">
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Velouté de légumes d'antan</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Carotte, panais, topinambour</p>
+                        <p class="mainContainer_catCont_card_info_price">35€</p>
+                    </div>
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Soupe à l'oignon</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Revisitée</p>
+                        <p class="mainContainer_catCont_card_info_price">20€</p>
+                    </div>
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mainContainer_meal">
+            <div class="mainContainer_catCont">
+                <!-- plat -->
                 <h2>Plats</h2>
-                <div class="mainContainer_meal_separator"></div>
-                <div class="mainContainer_meal_card">
-                    <h3></h3>
-                    <div class="mainContainer_meal_card_info">
-                        <p></p>
-                        <p class=""></p>
+                <div class="mainContainer_catCont_separator"></div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Coquilles Saint-Jacques</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Accompagnées d'une purée de panais</p>
+                        <p class="mainContainer_catCont_card_info_price">40€</p>
                     </div>
-                    <div class="mainContainer_meal_card_forChecked">
-                        <div class="mainContainer_meal_card_forChecked_checkIcon">
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Magret de canard</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Et parmentier de pommes de terre</p>
+                        <p class="mainContainer_catCont_card_info_price">35€</p>
+                    </div>
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <p class="mainContainer_catCont_card_info_price">44€</p>
+                    </div>
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mainContainer_desserts">
+            <div class="mainContainer_catCont">
+                <!-- dessert -->
                 <h2>Desserts</h2>
-                <div class="mainContainer_desserts_separator"></div>
-                <div class="mainContainer_desserts_card">
-                    <h3></h3>
-                    <div class="mainContainer_desserts_card_info">
-                        <p></p>
-                        <p class=""></p>
+                <div class="mainContainer_catCont_separator"></div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Pétales de violettes glacés</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Et purée de noisettes</p>
+                        <p class="mainContainer_catCont_card_info_price">18€</p>
                     </div>
-                    <div class="mainContainer_desserts_card_forChecked">
-                        <div class="mainContainer_desserts_card_forChecked_checkIcon">
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Fondant au chocolat</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Revisité</p>
+                        <p class="mainContainer_catCont_card_info_price">22€</p>
+                    </div>
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContainer_catCont_card">
+                    <h3>Millefeuille croustillant</h3>
+                    <div class="mainContainer_catCont_card_info">
+                        <p>Myrtilles et pâte d’amande</p>
+                        <p class="mainContainer_catCont_card_info_price">23€</p>
+                    </div>
+                    <div class="mainContainer_catCont_card_forChecked">
+                        <div class="mainContainer_catCont_card_forChecked_checkIcon">
                             <i class="fa-solid fa-check"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <button>Commander</button>
+            <div class="mainContainer_btnCont">
+                <button class="mainContainer_btnCont_btn">Commander</button>
+            </div>
         </div>
     </main>
     <footer>
