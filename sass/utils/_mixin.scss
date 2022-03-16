@@ -11,6 +11,14 @@
     color: white;
     font-size: 0.9em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.664);
+        transition: all 200ms ease-in-out;
+    }
 }
 
 @mixin cards {
@@ -43,6 +51,34 @@
                 }
                 p {
                     font-weight: 300;
+                }
+            }
+            &_icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 50px;
+                margin-top: -43px;
+                z-index: 1;
+                &_fill {
+                    z-index: 10;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    height: 41px;
+                    width: 0px;
+                    background: linear-gradient(to top, map-get($colors, secondary) 30%, map-get($colors, primary) 80%); 
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    opacity: 1;
+                    cursor: pointer;
+                    transition: width 400ms ease-in-out;
+                    &:hover {
+                        width: 41px;
+                        transition: all 600ms ease-in-out;
+                    }
                 }
             }
         }
