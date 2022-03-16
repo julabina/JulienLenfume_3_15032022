@@ -70,6 +70,52 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  visibility: hidden;
+  animation: visible 3000ms linear;
+}
+.loader_test {
+  position: absolute;
+  border-top: 10px solid red;
+  border-bottom: 10px solid cyan;
+  border-left: 10px solid blue;
+  border-right: 10px solid yellow;
+  top: 30%;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 800ms linear;
+  animation-duration: 6000ms;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes visible {
+  0% {
+    visibility: visible;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* HEADER */
 .headerCont {
   position: relative;
