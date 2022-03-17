@@ -74,6 +74,14 @@
                 transition: all 300ms 120ms ease-in-out;
             }
         }
+        @include forTablet {
+            margin-left: 19%;   
+            &_cont {
+                &_heart {
+                    margin-right: 80px;
+                }
+            }    
+        }
     }
     &_catCont {
         h2 {
@@ -182,6 +190,34 @@
                     transition: all 600ms ease-in-out;
             }
         } 
+        @include forTablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &_card {
+                width: 64%; 
+                padding-right: 0;
+                &_cont {
+                    &_info {
+                        &_price {
+                            transform: translate(70px);
+                        }
+                    }
+                }
+                &_checkCont {
+                    position: relative;
+                    right: 0;
+                    width: 80px;
+                    &_forChecked {
+                        transform: translate(80px);
+                    }
+                }  
+                &:hover .mainContainer_catCont_card_cont_info_price {
+                    width: 75px;
+                    transform: translate(50px);  
+                }
+            }
+        }
     }
     &_btnCont {
         display: flex;

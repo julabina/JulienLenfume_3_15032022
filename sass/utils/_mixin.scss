@@ -112,6 +112,14 @@
                 color: transparent;
                 transition: all 300ms 120ms ease-in-out;
             }
+            @include forTablet {
+                &_icon {
+                    right: 23%;
+                }  
+                &_fill {
+                    right: 23%;
+                }
+            }
         }
         &_new {
             z-index: 1;
@@ -128,6 +136,24 @@
             &--new {
                 visibility: visible;
             }
+            @include forTablet {
+                right: 21.5%;   
+            }
         }
+         @include forTablet {
+            width: 64%;       
+        } 
     }   
+}
+
+@mixin forTablet {
+    @media screen and (min-width : map-get($queries, tablet)) {
+        @content
+    }
+}
+
+@mixin forDesktop {
+    @media screen and (min-width : map-get($queries, desktop)) {
+        @content
+    }
 }

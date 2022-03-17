@@ -266,6 +266,26 @@ footer p {
   font-size: 0.9em;
   font-weight: 700;
 }
+@media screen and (min-width: 670px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 8%;
+  }
+  footer h2 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 670px) {
+  footer a {
+    transition: all 150ms ease-in-out;
+  }
+  footer a:hover {
+    transition: all 150ms ease-in-out;
+    color: #bfbfbf;
+  }
+}
 
 .footer_top_cont {
   margin: 18px 0 0 0;
@@ -309,6 +329,11 @@ footer p {
   outline: none;
   border: 0;
   background: transparent;
+}
+@media screen and (min-width: 670px) {
+  .nav_form_search input {
+    width: 60%;
+  }
 }
 .nav_form h1 {
   width: 60%;
@@ -387,6 +412,19 @@ footer p {
 }
 .nav_functioning_container_card_icon {
   color: #278870;
+}
+@media screen and (min-width: 670px) {
+  .nav_functioning_container {
+    width: 400px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 670px) {
+  .nav_functioning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* SECTION 2 */
@@ -489,6 +527,14 @@ footer p {
   color: transparent;
   transition: all 300ms 120ms ease-in-out;
 }
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_top_card_iconCont_icon {
+    right: 23%;
+  }
+  .menuCont_restaurants_top_card_iconCont_fill {
+    right: 23%;
+  }
+}
 .menuCont_restaurants_top_card_new {
   z-index: 1;
   visibility: hidden;
@@ -504,6 +550,16 @@ footer p {
 }
 .menuCont_restaurants_top_card_new--new {
   visibility: visible;
+}
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_top_card_new {
+    right: 21.5%;
+  }
+}
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_top_card {
+    width: 64%;
+  }
 }
 .menuCont_restaurants_top_card_img--1 {
   background-image: url("../../assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -603,6 +659,14 @@ footer p {
   color: transparent;
   transition: all 300ms 120ms ease-in-out;
 }
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_bot_card_iconCont_icon {
+    right: 23%;
+  }
+  .menuCont_restaurants_bot_card_iconCont_fill {
+    right: 23%;
+  }
+}
 .menuCont_restaurants_bot_card_new {
   z-index: 1;
   visibility: hidden;
@@ -619,6 +683,16 @@ footer p {
 .menuCont_restaurants_bot_card_new--new {
   visibility: visible;
 }
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_bot_card_new {
+    right: 21.5%;
+  }
+}
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_bot_card {
+    width: 64%;
+  }
+}
 .menuCont_restaurants_bot_card_img--1 {
   background-image: url("../../assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-position: bottom;
@@ -626,6 +700,23 @@ footer p {
 .menuCont_restaurants_bot_card_img--2 {
   background-position: bottom;
   background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+@media screen and (min-width: 670px) {
+  .menuCont_restaurants_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menuCont_restaurants_bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 670px) {
+  .menuCont h1 {
+    margin-left: 18%;
+  }
 }
 
 .picture {
@@ -705,6 +796,14 @@ footer p {
   -moz-background-clip: text;
   color: transparent;
   transition: all 300ms 120ms ease-in-out;
+}
+@media screen and (min-width: 670px) {
+  .mainContainer_title {
+    margin-left: 19%;
+  }
+  .mainContainer_title_cont_heart {
+    margin-right: 80px;
+  }
 }
 .mainContainer_catCont h2 {
   text-transform: uppercase;
@@ -809,6 +908,32 @@ footer p {
 .mainContainer_catCont_card:hover .mainContainer_catCont_card_cont_info_price {
   width: 75px;
   transition: all 600ms ease-in-out;
+}
+@media screen and (min-width: 670px) {
+  .mainContainer_catCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainContainer_catCont_card {
+    width: 64%;
+    padding-right: 0;
+  }
+  .mainContainer_catCont_card_cont_info_price {
+    transform: translate(70px);
+  }
+  .mainContainer_catCont_card_checkCont {
+    position: relative;
+    right: 0;
+    width: 80px;
+  }
+  .mainContainer_catCont_card_checkCont_forChecked {
+    transform: translate(80px);
+  }
+  .mainContainer_catCont_card:hover .mainContainer_catCont_card_cont_info_price {
+    width: 75px;
+    transform: translate(50px);
+  }
 }
 .mainContainer_btnCont {
   display: flex;

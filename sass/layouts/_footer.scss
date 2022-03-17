@@ -17,6 +17,24 @@ footer {
         font-size: 0.9em;
         font-weight: 700;
     }
+    @include forTablet {
+        display: flex;
+        justify-content: space-around;  
+        align-items: center;   
+        padding: 20px 8%;
+        h2 {
+            margin-bottom: 10px;
+        }      
+    }
+    @include forTablet {
+        a {
+            transition: all 150ms ease-in-out;
+            &:hover {
+                transition: all 150ms ease-in-out;
+                color: darken($color: white, $amount: 25);
+            }
+        }
+    }    
 }
 
 .footer_top {
