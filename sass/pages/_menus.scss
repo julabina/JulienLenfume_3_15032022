@@ -34,9 +34,45 @@
         h1 {
             font-size: 1.7em;
         }
-        &_heart {
-            font-size: 1.6em;
-            line-height: 1;
+        &_cont {
+            display: flex;
+            &_heart {
+                z-index: 10;
+                font-size: 1.6em;
+                line-height: 1;
+                cursor: pointer;
+            color: black;
+            &--fill {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.51em;
+                line-height: .04167em;
+                vertical-align: -0.125em;
+                right: 45px;
+                height: 27.2px;
+                background: linear-gradient(to top, map-get($colors, secondary) 30%, map-get($colors, primary) 80%); 
+                background-clip: text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                color: transparent;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+            }
+            &:hover .mainContainer_title_cont_heart--fill {
+                opacity: 1;
+                transition: opacity 300ms ease-in-out; 
+            }
+            &:hover .mainContainer_title_cont_heart {
+                background: linear-gradient(to top, map-get($colors, secondary) 30%, map-get($colors, primary) 80%); 
+                background-clip: text;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                color: transparent;
+                transition: all 300ms 120ms ease-in-out;
+            }
         }
     }
     &_catCont {
