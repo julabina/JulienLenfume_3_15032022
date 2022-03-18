@@ -45,7 +45,7 @@
                 display: flex;
                 flex-direction: column;
                 h2 {
-                    font-size: 1.1;
+                    font-size: 1.1em;
                     font-weight: 700;
                     margin-bottom: 7px;
                 }
@@ -79,12 +79,12 @@
                 -webkit-background-clip: text;
                 -moz-background-clip: text;
                 color: transparent;
-                cursor: pointer;
                 font-size: 1.51em;
                 line-height: .04167em;
                 vertical-align: -0.125em;
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
+                cursor: pointer;
             }
             &:hover .menuCont_restaurants_top_card_iconCont_fill {
                 z-index: 100;
