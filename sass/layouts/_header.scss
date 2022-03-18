@@ -1,4 +1,13 @@
 /* HEADER */
+header {
+    @include forDesktop {
+        z-index: 1;
+        position: fixed;  
+        top: 0; 
+        left: 0;right: 0;
+        background: #fafafa;
+    }
+}
 
 .headerCont {
     position: relative;
@@ -12,6 +21,9 @@
         height: 28px;
         margin-top: 7px;
     }
+    @include forDesktop {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.144);    
+    } 
 }
 
 .back-arrow {

@@ -25,8 +25,6 @@ footer {
         h2 {
             margin-bottom: 10px;
         }      
-    }
-    @include forTablet {
         a {
             transition: all 150ms ease-in-out;
             &:hover {
@@ -34,7 +32,17 @@ footer {
                 color: darken($color: white, $amount: 25);
             }
         }
-    }    
+    }  
+    @include forDesktop {
+        justify-content: start;
+        height: 100px;
+        position: fixed;
+        bottom: 0;
+        left: 0;right: 0;
+        h2 {
+            margin-right: 120px;
+        }
+    }
 }
 
 .footer_top {
@@ -48,6 +56,9 @@ footer {
             margin: -7px 0 0 15px;
         }
     }
+    @include forDesktop {
+        margin-right: 120px;   
+    } 
 }
 
 .footer_bot {

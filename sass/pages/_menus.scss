@@ -41,7 +41,7 @@
                 font-size: 1.6em;
                 line-height: 1;
                 cursor: pointer;
-            color: black;
+                color: black;
             &--fill {
                 position: absolute;
                 display: flex;
@@ -78,7 +78,10 @@
             margin-left: 19%;   
             &_cont {
                 &_heart {
-                    margin-right: 80px;
+                    margin-right: 100px;
+                    &--fill {
+                       right: 145px; 
+                    }
                 }
             }    
         }

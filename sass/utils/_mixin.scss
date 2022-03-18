@@ -143,7 +143,14 @@
          @include forTablet {
             width: 64%;       
         } 
-    }   
+    } 
+    @include forDesktop {
+        &_card {
+            margin-bottom: initial;
+            width: 400px;
+            margin: 0 2.5%;
+        }
+    }
 }
 
 @mixin forTablet {
