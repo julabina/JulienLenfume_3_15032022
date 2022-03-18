@@ -284,6 +284,7 @@
                     width: 80%;
                 }
                 &--long {
+                    min-height: 305px;
                     overflow: scroll;
                 }
             }
@@ -311,6 +312,9 @@
             &_catCont {
                 margin-bottom: 50px;
                 height: 320px;
+            }
+            &--long {
+                min-height: 310px;
             }
         }
         &_btnCont {
