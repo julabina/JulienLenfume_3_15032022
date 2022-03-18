@@ -302,36 +302,40 @@ footer p {
 }
 @media screen and (min-width: 1279px) {
   footer {
-    justify-content: start;
+    justify-content: space-between;
     height: 100px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-  }
-  footer h2 {
-    margin-right: 120px;
+    padding: 20px 65px;
   }
 }
 
-.footer_top_cont {
+.footerCont_top_cont {
   margin: 18px 0 0 0;
   display: flex;
 }
-.footer_top_cont_logo {
+.footerCont_top_cont_logo {
   width: 11px;
 }
-.footer_top_cont p {
+.footerCont_top_cont p {
   margin: -7px 0 0 15px;
 }
-@media screen and (min-width: 1279px) {
-  .footer_top {
-    margin-right: 120px;
+.footerCont_bot p {
+  margin-top: 11px;
+}
+@media screen and (min-width: 670px) {
+  .footerCont {
+    display: flex;
+    justify-content: space-between;
+    width: 52%;
   }
 }
-
-.footer_bot p {
-  margin-top: 11px;
+@media screen and (min-width: 1279px) {
+  .footerCont {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 1279px) {
@@ -422,6 +426,7 @@ footer p {
   align-items: center;
   width: 100%;
   margin-bottom: 25px;
+  cursor: pointer;
 }
 .nav_functioning_container_numberCont {
   z-index: 1;
@@ -450,7 +455,13 @@ footer p {
   margin-left: 20px;
 }
 .nav_functioning_container_card_icon {
-  color: #278870;
+  color: #7d7d7d;
+}
+.nav_functioning_container:hover .nav_functioning_container_card {
+  background: #f5ecfe;
+}
+.nav_functioning_container:hover .nav_functioning_container_card_icon {
+  color: #9356DC;
 }
 @media screen and (min-width: 670px) {
   .nav_functioning_container {
@@ -504,6 +515,23 @@ footer p {
   }
   .nav_functioning_container {
     margin-bottom: 4%;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.233);
+    border-radius: 15px;
+    transform: scale(1);
+    transition: all 300ms ease-in-out;
+  }
+  .nav_functioning_container_numberCont {
+    height: 100%;
+    width: 70px;
+    font-size: 1.4em;
+    border-radius: 15px 0 0 15px;
+  }
+  .nav_functioning_container_card {
+    box-shadow: none;
+  }
+  .nav_functioning_container:hover {
+    transform: scale(1.02);
+    transition: all 300ms ease-in-out;
   }
 }
 
@@ -646,6 +674,22 @@ footer p {
     margin-bottom: initial;
     width: 400px;
     margin: 0 2.5%;
+    transform: scale(1);
+    transition: all 200ms ease-in-out;
+  }
+  .menuCont_restaurants_top_card_iconCont_icon {
+    right: 10%;
+  }
+  .menuCont_restaurants_top_card_iconCont_fill {
+    right: 10%;
+  }
+  .menuCont_restaurants_top_card_new {
+    right: 4%;
+  }
+  .menuCont_restaurants_top_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.404);
+    transition: all 300ms ease-in-out;
   }
 }
 .menuCont_restaurants_top_card_img--1 {
@@ -785,6 +829,22 @@ footer p {
     margin-bottom: initial;
     width: 400px;
     margin: 0 2.5%;
+    transform: scale(1);
+    transition: all 200ms ease-in-out;
+  }
+  .menuCont_restaurants_bot_card_iconCont_icon {
+    right: 10%;
+  }
+  .menuCont_restaurants_bot_card_iconCont_fill {
+    right: 10%;
+  }
+  .menuCont_restaurants_bot_card_new {
+    right: 4%;
+  }
+  .menuCont_restaurants_bot_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.404);
+    transition: all 300ms ease-in-out;
   }
 }
 .menuCont_restaurants_bot_card_img--1 {

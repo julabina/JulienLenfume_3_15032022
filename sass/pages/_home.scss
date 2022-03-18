@@ -66,6 +66,7 @@ main {
             align-items: center;
             width: 100%;
             margin-bottom: 25px;
+            cursor: pointer;
             &_numberCont {
                 z-index: 1;
                 display: flex;
@@ -91,8 +92,14 @@ main {
                     margin-left: 20px;
                 }
                 &_icon {
-                    color: darken($color: map-get($colors, tertiary), $amount: 40);
+                    color: #7d7d7d;
                 }
+            }
+            &:hover .nav_functioning_container_card {
+                background: #f5ecfe;
+            }
+            &:hover .nav_functioning_container_card_icon {
+                color: map-get($map: $colors, $key:primary );
             }
             @include forTablet {
                 width: 400px;
@@ -141,6 +148,23 @@ main {
             height: 48%;
             &_container {
                 margin-bottom: 4%;
+                box-shadow: 0 7px 15px rgba(0, 0, 0, 0.233);
+                border-radius: 15px;
+                transform: scale(1);
+                transition: all 300ms ease-in-out;
+                &_numberCont {
+                    height: 100%;
+                    width: 70px;
+                    font-size: 1.4em;
+                    border-radius: 15px 0 0 15px;
+                }
+                &_card {
+                    box-shadow: none;
+                }
+                &:hover {
+                    transform: scale(1.02);
+                    transition: all 300ms ease-in-out;
+                }
             }
         }
     }
