@@ -18,6 +18,13 @@
         background-position: center;
         background-image: url("../../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     }
+    @include forDesktop {
+        z-index: 1;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;top: 0;
+    }
 }
 
 .mainContainer {
@@ -86,37 +93,38 @@
             }    
         }
     }
-    &_catCont {
-        h2 {
-            text-transform: uppercase;
-            font-weight: 300;
-            margin-top: 21px;
-        }
-        &_separator {
-            width: 40px;
-            border-bottom: 3px solid map-get($colors, tertiary);
-            margin: 6px 0 13px 0;
-        }
-        &_card {
-            display: flex;
-            width: 100%;
-            height: 67px;
-            background: white;
-            margin-bottom: 15px;
-            border-radius: 15px;
-            padding: 15px 12px;
-            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.103);
-            cursor: pointer;
-            &_cont {
+    &_part {
+        &_catCont {
+            h2 {
+                text-transform: uppercase;
+                font-weight: 300;
+                margin-top: 21px;
+            }
+            &_separator {
+                width: 40px;
+                border-bottom: 3px solid map-get($colors, tertiary);
+                margin: 6px 0 13px 0;
+            }
+            &_card {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
                 width: 100%;
-                h3 {
-                    font-size: 1.05em;
-                    font-weight: 700;
-                }
-                &_info {
+                height: 67px;
+                background: white;
+                margin-bottom: 15px;
+                border-radius: 15px;
+                padding: 15px 12px;
+                box-shadow: 0 7px 15px rgba(0, 0, 0, 0.103);
+                cursor: pointer;
+                &_cont {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    h3 {
+                        font-size: 1.05em;
+                        font-weight: 700;
+                    }
+                    &_info {
                     display: flex;
                     justify-content: space-between;
                     p {
@@ -146,78 +154,79 @@
                 margin-top: -15px;
                 border-radius: 0 15px 15px 0;
                 &_forChecked {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;height: 100%;
+                    background: map-get($map: $colors, $key:tertiary );
+                    transform: translate(60px);
+                    transition: all 600ms ease-in-out;
+                    &_checkIcon {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 100%;height: 100%;
-                        background: map-get($map: $colors, $key:tertiary );
-                        transform: translate(60px);
-                        transition: all 600ms ease-in-out;
-                        &_checkIcon {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 20px;
-                            width: 20px;
+                        height: 20px;
+                        width: 20px;
                             border-radius: 50%;
                             background: white;
                             color: map-get($map: $colors, $key:tertiary );
                         }
+                    }
                 }
-            }
-            &--1 {
-                animation: card1 1300ms linear;
-            }
-            &--2 {
-                animation: card2 1300ms linear;
+                &--1 {
+                    animation: card1 1300ms linear;
+                }
+                &--2 {
+                    animation: card2 1300ms linear;
+                    
+                }
+                &--3 {
+                    animation: card3 1300ms linear;
                 
-            }
-            &--3 {
-                animation: card3 1300ms linear;
-                
-            }
-            &--4 {
-                animation: card4 1300ms linear;
-
-            }
-            &:hover .mainContainer_catCont_card_checkCont_forChecked {                
+                }
+                &--4 {
+                    animation: card4 1300ms linear;
+                    
+                }
+                &:hover .mainContainer_part_catCont_card_checkCont_forChecked {                
                     transform: translate(0);
                     transition: all 600ms ease-in-out;
                 }
-                &:hover .mainContainer_catCont_card_checkCont_forChecked_checkIcon {
+                &:hover .mainContainer_part_catCont_card_checkCont_forChecked_checkIcon {
                     transform: rotate(360deg);
                     transition: all 600ms ease-in-out;
                 }
-                &:hover .mainContainer_catCont_card_cont_info_price {
+                &:hover .mainContainer_part_catCont_card_cont_info_price {
                     width: 75px;   
                     transition: all 600ms ease-in-out;
-            }
-        } 
-        @include forTablet {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            &_card {
-                width: 64%; 
-                padding-right: 0;
-                &_cont {
-                    &_info {
-                        &_price {
-                            transform: translate(70px);
+                }
+            } 
+            @include forTablet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &_card {
+                    width: 64%; 
+                    padding-right: 0;
+                    &_cont {
+                        &_info {
+                            &_price {
+                                transform: translate(70px);
+                            }
                         }
                     }
-                }
-                &_checkCont {
-                    position: relative;
-                    right: 0;
-                    width: 80px;
-                    &_forChecked {
-                        transform: translate(80px);
+                    &_checkCont {
+                        position: relative;
+                        right: 0;
+                        width: 80px;
+                        &_forChecked {
+                            transform: translate(80px);
+                        }
+                    }  
+                    &:hover .mainContainer_part_catCont_card_cont_info_price {
+                        width: 75px;
+                        transform: translate(50px);  
                     }
-                }  
-                &:hover .mainContainer_catCont_card_cont_info_price {
-                    width: 75px;
-                    transform: translate(50px);  
                 }
             }
         }
@@ -229,6 +238,84 @@
         &_btn {
             @include btn;
             min-width: 180px;
+        }
+    }
+    @include forDesktop {
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        margin-top: 60px;
+        background-color: initial ;
+        &_title {
+            flex-direction: column;
+            align-items: flex-end;
+            position: fixed;
+            top: 5px;
+            right: -5px;
+            h1 {
+                font-size: 1.3em;
+            }
+            &_cont {
+                margin-top: 25px;
+                &_heart {
+                    color: white;
+                    margin-right: initial;
+                    &--fill {
+                       right: 30px; 
+                    }
+                }
+            }
+        }
+        &_part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 500px;
+            width: 700px;
+            &_catCont {
+                border-radius: 20px;
+                background: rgba(255, 255, 255, 0.548);
+                margin-bottom: 10px;
+                width: 80%;
+                height: 310px;
+                &_card {
+                    width: 80%;
+                }
+                &--long {
+                    overflow: scroll;
+                }
+            }
+        }
+        &_btnCont {
+            display: flex;
+            align-items: center;
+            margin: initial;
+            height: 310px;
+            margin-bottom: 10px;
+            &_btn {
+                height: 70px;
+                width: 210px;
+                font-size: 1.2em;
+                &:hover {
+                    border: 3px solid map-get($map: $colors, $key: primary);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    @include forDesktopLarge {
+        margin-top: 100px;
+        &_part {
+            &_catCont {
+                margin-bottom: 50px;
+                height: 320px;
+            }
+        }
+        &_btnCont {
+            height: 320px;
+            margin-bottom: 50px;
         }
     }
 }

@@ -182,3 +182,9 @@
         @content
     }
 }
+
+@mixin forDesktopLarge {
+    @media screen and (min-width : map-get($queries, desktopL)) {
+        @content
+    }
+}

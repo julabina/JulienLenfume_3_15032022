@@ -81,7 +81,7 @@ body {
   right: 0;
   background: white;
   visibility: hidden;
-  /* animation: visible 3500ms linear ; */
+  animation: visible 3500ms linear;
 }
 .loader_test {
   display: flex;
@@ -229,7 +229,7 @@ body {
 /* HEADER */
 @media screen and (min-width: 1279px) {
   header {
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -302,13 +302,19 @@ footer p {
 }
 @media screen and (min-width: 1279px) {
   footer {
-    justify-content: space-between;
-    height: 100px;
     position: fixed;
+    z-index: 10;
+    justify-content: space-between;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 20px 65px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  footer {
+    height: 100px;
   }
 }
 
@@ -927,6 +933,16 @@ footer p {
   background-position: center;
   background-image: url("../../assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
+@media screen and (min-width: 1279px) {
+  .picture {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+}
 
 .mainContainer {
   padding: 15px;
@@ -995,17 +1011,17 @@ footer p {
     right: 145px;
   }
 }
-.mainContainer_catCont h2 {
+.mainContainer_part_catCont h2 {
   text-transform: uppercase;
   font-weight: 300;
   margin-top: 21px;
 }
-.mainContainer_catCont_separator {
+.mainContainer_part_catCont_separator {
   width: 40px;
   border-bottom: 3px solid #99E2D0;
   margin: 6px 0 13px 0;
 }
-.mainContainer_catCont_card {
+.mainContainer_part_catCont_card {
   display: flex;
   width: 100%;
   height: 67px;
@@ -1016,27 +1032,27 @@ footer p {
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.103);
   cursor: pointer;
 }
-.mainContainer_catCont_card_cont {
+.mainContainer_part_catCont_card_cont {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
 }
-.mainContainer_catCont_card_cont h3 {
+.mainContainer_part_catCont_card_cont h3 {
   font-size: 1.05em;
   font-weight: 700;
 }
-.mainContainer_catCont_card_cont_info {
+.mainContainer_part_catCont_card_cont_info {
   display: flex;
   justify-content: space-between;
 }
-.mainContainer_catCont_card_cont_info p {
+.mainContainer_part_catCont_card_cont_info p {
   font-size: 0.87em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.mainContainer_catCont_card_cont_info_price {
+.mainContainer_part_catCont_card_cont_info_price {
   width: 30px;
   display: flex;
   align-items: flex-end;
@@ -1046,7 +1062,7 @@ footer p {
   font-weight: 700;
   transition: all 600ms ease-in-out;
 }
-.mainContainer_catCont_card_checkCont {
+.mainContainer_part_catCont_card_checkCont {
   position: absolute;
   right: 15px;
   width: 60px;
@@ -1055,7 +1071,7 @@ footer p {
   margin-top: -15px;
   border-radius: 0 15px 15px 0;
 }
-.mainContainer_catCont_card_checkCont_forChecked {
+.mainContainer_part_catCont_card_checkCont_forChecked {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1065,7 +1081,7 @@ footer p {
   transform: translate(60px);
   transition: all 600ms ease-in-out;
 }
-.mainContainer_catCont_card_checkCont_forChecked_checkIcon {
+.mainContainer_part_catCont_card_checkCont_forChecked_checkIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1075,52 +1091,52 @@ footer p {
   background: white;
   color: #99E2D0;
 }
-.mainContainer_catCont_card--1 {
+.mainContainer_part_catCont_card--1 {
   animation: card1 1300ms linear;
 }
-.mainContainer_catCont_card--2 {
+.mainContainer_part_catCont_card--2 {
   animation: card2 1300ms linear;
 }
-.mainContainer_catCont_card--3 {
+.mainContainer_part_catCont_card--3 {
   animation: card3 1300ms linear;
 }
-.mainContainer_catCont_card--4 {
+.mainContainer_part_catCont_card--4 {
   animation: card4 1300ms linear;
 }
-.mainContainer_catCont_card:hover .mainContainer_catCont_card_checkCont_forChecked {
+.mainContainer_part_catCont_card:hover .mainContainer_part_catCont_card_checkCont_forChecked {
   transform: translate(0);
   transition: all 600ms ease-in-out;
 }
-.mainContainer_catCont_card:hover .mainContainer_catCont_card_checkCont_forChecked_checkIcon {
+.mainContainer_part_catCont_card:hover .mainContainer_part_catCont_card_checkCont_forChecked_checkIcon {
   transform: rotate(360deg);
   transition: all 600ms ease-in-out;
 }
-.mainContainer_catCont_card:hover .mainContainer_catCont_card_cont_info_price {
+.mainContainer_part_catCont_card:hover .mainContainer_part_catCont_card_cont_info_price {
   width: 75px;
   transition: all 600ms ease-in-out;
 }
 @media screen and (min-width: 670px) {
-  .mainContainer_catCont {
+  .mainContainer_part_catCont {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .mainContainer_catCont_card {
+  .mainContainer_part_catCont_card {
     width: 64%;
     padding-right: 0;
   }
-  .mainContainer_catCont_card_cont_info_price {
+  .mainContainer_part_catCont_card_cont_info_price {
     transform: translate(70px);
   }
-  .mainContainer_catCont_card_checkCont {
+  .mainContainer_part_catCont_card_checkCont {
     position: relative;
     right: 0;
     width: 80px;
   }
-  .mainContainer_catCont_card_checkCont_forChecked {
+  .mainContainer_part_catCont_card_checkCont_forChecked {
     transform: translate(80px);
   }
-  .mainContainer_catCont_card:hover .mainContainer_catCont_card_cont_info_price {
+  .mainContainer_part_catCont_card:hover .mainContainer_part_catCont_card_cont_info_price {
     width: 75px;
     transform: translate(50px);
   }
@@ -1152,6 +1168,86 @@ footer p {
   opacity: 0.8;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.664);
   transition: all 200ms ease-in-out;
+}
+@media screen and (min-width: 1279px) {
+  .mainContainer {
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: initial;
+  }
+  .mainContainer_title {
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 5px;
+    right: -5px;
+  }
+  .mainContainer_title h1 {
+    font-size: 1.3em;
+  }
+  .mainContainer_title_cont {
+    margin-top: 25px;
+  }
+  .mainContainer_title_cont_heart {
+    color: white;
+    margin-right: initial;
+  }
+  .mainContainer_title_cont_heart--fill {
+    right: 30px;
+  }
+  .mainContainer_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+    width: 700px;
+  }
+  .mainContainer_part_catCont {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.548);
+    margin-bottom: 10px;
+    width: 80%;
+    height: 310px;
+  }
+  .mainContainer_part_catCont_card {
+    width: 80%;
+  }
+  .mainContainer_part_catCont--long {
+    overflow: scroll;
+  }
+  .mainContainer_btnCont {
+    display: flex;
+    align-items: center;
+    margin: initial;
+    height: 310px;
+    margin-bottom: 10px;
+  }
+  .mainContainer_btnCont_btn {
+    height: 70px;
+    width: 210px;
+    font-size: 1.2em;
+  }
+  .mainContainer_btnCont_btn:hover {
+    border: 3px solid #9356DC;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .mainContainer {
+    margin-top: 100px;
+  }
+  .mainContainer_part_catCont {
+    margin-bottom: 50px;
+    height: 320px;
+  }
+  .mainContainer_btnCont {
+    height: 320px;
+    margin-bottom: 50px;
+  }
 }
 
 @keyframes card1 {
