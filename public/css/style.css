@@ -369,6 +369,9 @@ footer p {
   height: 50px;
   background-color: #eaeaea;
 }
+.nav_form_search_icon {
+  color: #383838;
+}
 .nav_form_search input {
   height: 100%;
   padding-left: 10px;
