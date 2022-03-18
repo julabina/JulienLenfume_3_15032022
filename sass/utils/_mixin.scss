@@ -188,3 +188,9 @@
         @content
     }
 }
+
+@mixin forLowResMobile {
+    @media screen and (max-width : map-get($queries, lowResMobile)) {
+        @content
+    }
+}

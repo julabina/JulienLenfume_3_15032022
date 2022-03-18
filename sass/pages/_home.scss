@@ -212,11 +212,17 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                &_card_img {
+                    background-position: center;
+                }
             }       
             &_bot {
                 display: flex;
                 flex-direction: column;
                 align-items: center; 
+                &_card_img {
+                    background-position: center;
+                }
             }       
         }
     }

@@ -25,6 +25,13 @@
         bottom: 0;
         left: 0;top: 0;
     }
+    @include forLowResMobile {
+        background-size: auto 100%;
+    }
+}
+
+#lowSizeEnchantee {
+    background-size: 100% auto;
 }
 
 .mainContainer {
