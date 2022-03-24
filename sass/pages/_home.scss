@@ -211,6 +211,9 @@ main {
             }          
         }
         @include forTablet {
+            &_link {
+                width: 64%;
+            }
             &_top {
                 display: flex;
                 flex-direction: column;
@@ -230,9 +233,7 @@ main {
         }
     }
     @include forTablet {
-        a {
-            width: 64%;
-        }
+        
         h1 {
             margin-left: 18%;
         }
@@ -253,7 +254,7 @@ main {
             justify-content: space-between;
             align-items: center;
             height: 100%;
-            a {
+            &_link {
                 margin: 0 2.5%;
                 width: 400px;
             }
