@@ -230,6 +230,9 @@ main {
         }
     }
     @include forTablet {
+        a {
+            width: 64%;
+        }
         h1 {
             margin-left: 18%;
         }
@@ -250,6 +253,10 @@ main {
             justify-content: space-between;
             align-items: center;
             height: 100%;
+            a {
+                margin: 0 2.5%;
+                width: 400px;
+            }
             &_top {
                 flex-direction: row;
                 justify-content: center;

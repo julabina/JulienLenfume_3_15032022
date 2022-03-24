@@ -673,16 +673,10 @@ footer p {
     right: 21.5%;
   }
 }
-@media screen and (min-width: 670px) {
-  .menuCont_restaurants_top_card {
-    width: 64%;
-  }
-}
 @media screen and (min-width: 1279px) {
   .menuCont_restaurants_top_card {
     margin-bottom: initial;
     width: 400px;
-    margin: 0 2.5%;
     transform: scale(1);
     transition: all 200ms ease-in-out;
   }
@@ -828,16 +822,10 @@ footer p {
     right: 21.5%;
   }
 }
-@media screen and (min-width: 670px) {
-  .menuCont_restaurants_bot_card {
-    width: 64%;
-  }
-}
 @media screen and (min-width: 1279px) {
   .menuCont_restaurants_bot_card {
     margin-bottom: initial;
     width: 400px;
-    margin: 0 2.5%;
     transform: scale(1);
     transition: all 200ms ease-in-out;
   }
@@ -883,6 +871,9 @@ footer p {
   }
 }
 @media screen and (min-width: 670px) {
+  .menuCont a {
+    width: 64%;
+  }
   .menuCont h1 {
     margin-left: 18%;
   }
@@ -905,6 +896,10 @@ footer p {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+  }
+  .menuCont_restaurants a {
+    margin: 0 2.5%;
+    width: 400px;
   }
   .menuCont_restaurants_top {
     flex-direction: row;

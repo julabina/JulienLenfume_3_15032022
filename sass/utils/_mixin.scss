@@ -140,15 +140,11 @@
                 right: 21.5%;   
             }
         }
-         @include forTablet {
-            width: 64%;       
-        } 
     } 
     @include forDesktop {
         &_card {
             margin-bottom: initial;
             width: 400px;
-            margin: 0 2.5%;
             transform: scale(1);
             transition: all 200ms ease-in-out;
             &_iconCont {
