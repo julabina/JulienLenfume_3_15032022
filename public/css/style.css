@@ -83,30 +83,30 @@ body {
   visibility: hidden;
   animation: visible 3500ms linear;
 }
-.loader_test {
+.loader_mainCont {
   display: flex;
   justify-content: center;
   position: absolute;
   top: 30%;
   width: 100%;
 }
-.loader_test_img1 {
+.loader_mainCont_img1 {
   object-fit: cover;
   width: 50px;
   height: 150px;
   animation: glass1 3000ms linear 5;
 }
-.loader_test_img2 {
+.loader_mainCont_img2 {
   object-fit: cover;
   width: 50px;
   height: 150px;
   animation: glass2 3000ms linear 5;
 }
-.loader_test_cont {
+.loader_mainCont_cont {
   position: absolute;
   display: flex;
 }
-.loader_test_cont_line1 {
+.loader_mainCont_cont_line1 {
   position: relative;
   bottom: 5px;
   border-top: 3px solid #111;
@@ -114,7 +114,7 @@ body {
   transform: rotate(45deg);
   animation: lines1 3000ms ease-out 5;
 }
-.loader_test_cont_line2 {
+.loader_mainCont_cont_line2 {
   position: relative;
   bottom: 10px;
   border-top: 3px solid #111;
@@ -122,7 +122,7 @@ body {
   transform: rotate(90deg);
   animation: lines2 3000ms ease-out 5;
 }
-.loader_test_cont_line3 {
+.loader_mainCont_cont_line3 {
   position: relative;
   bottom: 5px;
   border-top: 3px solid #111;
@@ -853,6 +853,9 @@ footer p {
   background-image: url("../../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 @media screen and (min-width: 670px) {
+  .menuCont_restaurants_link {
+    width: 64%;
+  }
   .menuCont_restaurants_top {
     display: flex;
     flex-direction: column;
@@ -871,9 +874,6 @@ footer p {
   }
 }
 @media screen and (min-width: 670px) {
-  .menuCont a {
-    width: 64%;
-  }
   .menuCont h1 {
     margin-left: 18%;
   }
@@ -897,7 +897,7 @@ footer p {
     align-items: center;
     height: 100%;
   }
-  .menuCont_restaurants a {
+  .menuCont_restaurants_link {
     margin: 0 2.5%;
     width: 400px;
   }
